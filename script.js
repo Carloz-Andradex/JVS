@@ -21,6 +21,35 @@ document.getElementById('siBtn').addEventListener('click', function() {
     // Mostrar el mensaje específico
     document.getElementById('messageContainer').style.display = 'block';
     document.getElementById('messageContainer').innerHTML = '¡Oh Siii!';
+    document.getElementById('siBtn').addEventListener('click', function() {
+    document.getElementById('sadGifContainer').style.display = 'none';
+    document.getElementById('sadGifContainer1').style.display = 'none';
+    document.getElementById('sadGifContainer2').style.display = 'none';
+    document.getElementById('gifContainer').style.display = 'none';
+    document.getElementById('happyGifContainer').style.display = 'block';
+    document.getElementById('question').style.display = 'none';
+    document.getElementById('siBtn').style.display = 'none';
+    document.body.classList.add('bg-green');
+    document.getElementById('noBtn').style.display = 'none';
+    document.getElementById('messageContainer').style.display = 'block';
+    document.getElementById('messageContainer').innerHTML = 'Gracias';
+    setTimeout(function() {
+        document.getElementById('happyGifContainer').style.display = 'none';
+        document.getElementById('happyGifContainer2').style.display = 'block';
+    }, 1000);
+    setTimeout(function() {
+        document.getElementById('happyGifContainer2').style.display = 'none';
+        document.getElementById('happyGifContainer3').style.display = 'block';
+    }, 2000);
+    setTimeout(function() {
+        document.getElementById('happyGifContainer3').style.display = 'none';
+        document.getElementById('happyGifContainer4').style.display = 'block';
+    }, 3000);
+
+    // Mostrar alerta y redirigir
+    alert('Redirigiendo a la página deseada...');
+    window.location.href = 'https://www.ejemplo.com'; // Cambia esta URL por la de tu elección
+});
 
     // Mostrar otro gif después de 3 segundos
     setTimeout(function() {
